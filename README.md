@@ -1,54 +1,168 @@
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uganda Wildlife Conservation Society's mission and vision.">
+    <title>UWCS - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero-banner">
+        <div class="overlay">
+            <h1>Welcome to Uganda Wildlife Conservation Society</h1>
+            <p>Preserving Uganda’s wildlife for future generations.</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="wildlife-projects.html">Wildlife</a></li>
+            <li><a href="wildlife-projects.html">Projects</a></li>
+            <li><a href="events-education.html">Events</a></li>
+            <li><a href="support-contact.html">Support</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="intro">
+            <h2>About Uganda’s Biodiversity</h2>
+            <p>Uganda is home to some of the world's most diverse wildlife. From the majestic gorillas to colorful birds, every creature plays a vital role in our ecosystem.</p>
+            <a href="wildlife-projects.html" class="btn">Learn More</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Uganda Wildlife Conservation Society</p>
+    </footer>
+</body>
+</html>
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Uganda’s wildlife and ongoing conservation projects.">
+    <title>UWCS - Wildlife & Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero-banner">
+        <div class="overlay">
+            <h1>Explore Uganda’s Wildlife & Conservation Efforts</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events-education.html">Events</a></li>
+            <li><a href="support-contact.html">Support</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="wildlife-gallery">
+            <h2>Wildlife Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">Mammals</div>
+                <div class="gallery-item">Birds</div>
+                <div class="gallery-item">Reptiles</div>
+                <div class="gallery-item">Endangered Species</div>
+            </div>
+        </section>
+        <section class="projects">
+            <h2>Conservation Projects</h2>
+            <p>Discover our projects, achievements, and how you can help.</p>
+            <a href="support-contact.html" class="btn">Get Involved</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Uganda Wildlife Conservation Society</p>
+    </footer>
+</body>
+</html>
 
-# GitHub Pages
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+header.hero-banner {
+    background-image: url('wildlife-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
 
-</header>
+header.hero-banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    background: #006400;
+    text-align: center;
+}
 
-## Step 1: Enable GitHub Pages
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
 
-_Welcome to GitHub Pages and Jekyll :tada:!_
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
 
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
+main {
+    padding: 20px;
+}
 
-### :keyboard: Activity: Enable GitHub Pages
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
+.gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-<footer>
+.gallery-item {
+    background: #ddd;
+    padding: 20px;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
 
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #006400;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
